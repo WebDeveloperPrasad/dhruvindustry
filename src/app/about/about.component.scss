@@ -1,0 +1,30 @@
+#about {
+    background-color: #f8f9fa;
+  }
+  
+  #about h2, #about h3 {
+    font-weight: bold;
+  }
+  
+  #about ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-title {
+    font-weight: bold;
+  }
+  
+  img.img-fluid {
+    max-height: 300px;
+    object-fit: cover;
+  }
+  

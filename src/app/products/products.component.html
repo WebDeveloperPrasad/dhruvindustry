@@ -1,0 +1,22 @@
+<div class="container py-5">
+  <h2 class="text-center mb-5" style="font-weight: bold; color: #0056b3;">Our Products</h2>
+  <div class="row">
+    <div 
+      class="col-md-4 col-lg-3 text-center mb-4" 
+      *ngFor="let product of products"
+    >
+      <div class="card border-0 shadow h-100">
+        <img 
+          [src]="product.image" 
+          [alt]="product.name" 
+          class="card-img-top img-fluid" 
+          style="height: 200px; object-fit: cover;"
+        >
+        <div class="card-body">
+          <h5 class="card-title" style="color: #0056b3; font-weight: bold;">{{ product.name }}</h5>
+          <p class="card-text text-muted">{{ product.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
