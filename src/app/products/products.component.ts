@@ -11,12 +11,12 @@ export class ProductsComponent {
   products = [
     {
       name: 'Ratchet Lashing System And Lashing Belt',
-      image: '../../assets/products/RatchetLashingSystemAndLashingBelt.jpeg',
+      image: 'assets/products/RatchetLashingSystemAndLashingBelt.jpeg',
       description: 'The Ratchet Lashing system is used for securing cargo while transporting, shifting or storage. It is a modern, light weight and thoroughly reliable method of securing all types of load across an entire spectrum of requirements. It offers significant advantages over any other securing system.'
     },
     {
       name: 'Wire Buckle / H Buckle',
-      image: '../../assets/products/WireBuckleHBuckle.jpeg',
+      image: 'assets/products/WireBuckleHBuckle.jpeg',
       description: 'Wire buckles are a handy accessory when poly strapping is being used to secure a pallet for shipping. While wire buckles are fairly simple and straightforward to use, it is worth taking a moment to understand how they work before you get started.'
     },
     {
