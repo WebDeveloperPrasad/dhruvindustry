@@ -28,5 +28,41 @@
 //     font-size: 1.2rem;
 //     vertical-align: middle;
 //   }
+
+// ----product carousel
+// .carousel-control-prev-icon,
+// .carousel-control-next-icon {
+//   background-color: black; /* Make buttons visible */
+//   border-radius: 50%;
+//   padding: 15px;
+//   opacity: 1 !important; /* Ensure full visibility */
+// }
+
+// .carousel-control-prev,
+// .carousel-control-next {
+//   width: 5%; /* Adjust button area width */
+// }
   
-  
+//   --backgroung carousel
+
+/* Make background images cover the entire section */
+.carousel-item img {
+  object-fit: cover;
+  filter: brightness(50%); /* Darken images for better text contrast */
+}
+.carousel-control-prev, .carousel-control-next {
+  background-color: transparent; /* Removes background color */
+  border: none; /* Removes border */
+}
+
+/* Prevent the icon color change on hover */
+.carousel-control-prev:hover, .carousel-control-next:hover {
+  background-color: transparent !important; /* Ensure no color change */
+  opacity: 1; /* Keep button fully opaque */
+}
+
+/* Ensure the icons remain visible */
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-color: black; /* Keep icon color as black */
+  opacity: 1; /* No transparency on the icons */
+}

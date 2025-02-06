@@ -10,6 +10,31 @@ import { Component } from '@angular/core';
 export class ProductsComponent {
   products = [
     {
+      name: 'HDPE Tarpaulin Cover',
+      image: '../../assets/products/HDPETarpaulinCover.jpeg',
+      description: 'High density polyethylene (HDPE) tarpaulin is excellent for covering product protecting them from rain, moisture and dust.'
+    },
+    {
+      name: 'Canvas Cover',
+      image: '../../assets/products/CanvasCover.jpeg',
+      description: 'Canvas cover is 100% waterproof for protecting product from rain, dust.'
+    },
+    {
+      name: 'Silpaulin Cover',
+      image: '../../assets/products/SilpaulinCover.jpeg',
+      description: 'Silpaulin is Light Weight Tarpaulin. Features: Light Weight yet tough. Its lamination process makes it that much more stronger without adding too much to its weight'
+    },
+    {
+      name: 'VCI Anti Rust Products',
+      image: '../../assets/products/VCIAntiRustProducts.jpeg',
+      description: 'It is advisable to use such VCI (Volatile Corrosion Inhibitor) packing material to use protect both ferrous and non ferrous metal surface. It is providing reliable protection against corrosion for metal components. It is reliable corrosion free and long term protection for wide range of your product. VCI product protection duration 12 to 16 month depending on how tightly sealed (leak-proof) the packing. VCI product is cost saving. It is no environmental and safety hazards.'
+    },
+    {
+      name: 'HDPE Tarpaulin',
+      image: '../../assets/products/HDPETarpaulin.jpeg',
+      description: 'High density polyethylene (HDPE) tarpaulin is a product with multiple end uses.'
+    },
+    {
       name: 'Ratchet Lashing System And Lashing Belt',
       image: 'assets/products/RatchetLashingSystemAndLashingBelt.jpeg',
       description: 'The Ratchet Lashing system is used for securing cargo while transporting, shifting or storage. It is a modern, light weight and thoroughly reliable method of securing all types of load across an entire spectrum of requirements. It offers significant advantages over any other securing system.'
@@ -30,34 +55,9 @@ export class ProductsComponent {
       description: 'Composite strapping is commonly used for goods that may expand, settle, or contract during transportation. Specially made for usage on rough environmental materials and sharp edges, the Polyester Composite Strap is optimised to secure the cargo.'
     },
     {
-      name: 'HDPE Tarpaulin',
-      image: '../../assets/products/HDPETarpaulin.jpeg',
-      description: 'High density polyethylene (HDPE) tarpaulin is a product with multiple end uses.'
-    },
-    {
-      name: 'HDPE Tarpaulin Cover',
-      image: '../../assets/products/HDPETarpaulinCover.jpeg',
-      description: 'High density polyethylene (HDPE) tarpaulin is excellent for covering product protecting them from rain, moisture and dust.'
-    },
-    {
-      name: 'Canvas Cover',
-      image: '../../assets/products/CanvasCover.jpeg',
-      description: 'Canvas cover is 100% waterproof for protecting product from rain, dust.'
-    },
-    {
-      name: 'VCI Anti Rust Products',
-      image: '../../assets/products/VCIAntiRustProducts.jpeg',
-      description: 'It is advisable to use such VCI (Volatile Corrosion Inhibitor) packing material to use protect both ferrous and non ferrous metal surface. It is providing reliable protection against corrosion for metal components. It is reliable corrosion free and long term protection for wide range of your product. VCI product protection duration 12 to 16 month depending on how tightly sealed (leak-proof) the packing. VCI product is cost saving. It is no environmental and safety hazards.'
-    },
-    {
       name: 'Aluminium Foil Cover',
       image: '../../assets/products/AluminiumFoilCover.jpeg',
       description: 'Aluminum foil cover is ideal safe packing to protection of product. It is work on principle of climatic packing. Aluminum foil stand hot and cold climate at any temperature. It is suitable for seaworthy packing for long term protection of product.'
-    },
-    {
-      name: 'Silpaulin Cover',
-      image: '../../assets/products/SilpaulinCover.jpeg',
-      description: 'Silpaulin is Light Weight Tarpaulin. Features: Light Weight yet tough. Its lamination process makes it that much more stronger without adding too much to its weight'
     },
     {
       name: 'Shrink Wrap',

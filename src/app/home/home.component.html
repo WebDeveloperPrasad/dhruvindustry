@@ -1,6 +1,6 @@
 <div class="container-fluid p-0">
   <!-- Hero Section -->
-  <div 
+  <!-- <div 
     class="hero-section text-center text-white d-flex align-items-center justify-content-center"
     style="
       background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/package_2984739.png') no-repeat center center; 
@@ -12,7 +12,38 @@
       <p class="lead">Your Trusted Partner for Turnkey Packaging Solutions</p>
       <a class="btn btn-primary btn-lg px-5" routerLink="/products">Explore Our Products</a>
     </div>
+  </div> -->
+
+  <!-- Hero Section with Background Carousel -->
+<div class="hero-section text-center text-white d-flex align-items-center justify-content-center position-relative" style="height: 70vh; overflow: hidden;">
+  
+  <!-- Background Carousel -->
+  <div id="heroCarousel" class="carousel slide position-absolute w-100 h-100" data-bs-ride="carousel">
+    <div class="carousel-inner h-100">
+      <div *ngFor="let product of products; let i = index" class="carousel-item h-100" [class.active]="i === 0">
+        <img [src]="product.image" class="d-block w-100 h-100 object-fit-cover" alt="{{ product.name }}">
+      </div>
+    </div>
   </div>
+
+  <!-- Hero Content (Always Visible) -->
+  <div class="position-relative text-center">
+    <h1 class="display-4 font-weight-bold">Welcome to Dhruv Industries</h1>
+    <p class="lead">Your Trusted Partner for Turnkey Packaging Solutions</p>
+    <a class="btn btn-primary btn-lg px-5" routerLink="/products">Explore Our Products</a>
+  </div>
+
+  <!-- Carousel Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
 
   <!-- About Section -->
   <div class="about-section py-5 text-center bg-light">
@@ -33,28 +64,28 @@
       <div class="row mt-4">
         <div class="col-md-4 text-center">
           <div class="card border-0 shadow">
-            <img src="assets/products/HDPETarpaulin.jpeg" alt="HDPE Tarpaulin" class="card-img-top img-fluid" style="height: 200px; object-fit: cover;">
+            <img src="assets/products/HDPETarpaulinCover.jpeg" alt="HDPE Tarpaulin Cover" class="card-img-top img-fluid" style="height: 200px; object-fit: cover;">
             <div class="card-body">
-              <h4 class="card-title text-primary font-weight-bold">HDPE Tarpaulin</h4>
-              <p class="text-muted">High density polyethylene tarpaulin with multiple end uses.</p>
+              <h4 class="card-title text-primary font-weight-bold">HDPE Tarpaulin Cover</h4>
+              <p class="text-muted">High density polyethylene (HDPE) tarpaulin is excellent for covering product protecting them from rain, moisture and dust.</p>
             </div>
           </div>
         </div>
         <div class="col-md-4 text-center">
           <div class="card border-0 shadow">
-            <img src="assets/products/DunnageBag.jpeg" alt="Dunnage Air Bag" class="card-img-top img-fluid" style="height: 200px; object-fit: cover;">
+            <img src="assets/products/CanvasCover.jpeg" alt="Canvas Cover" class="card-img-top img-fluid" style="height: 200px; object-fit: cover;">
             <div class="card-body">
-              <h4 class="card-title text-primary font-weight-bold">Dunnage Air Bag</h4>
-              <p class="text-muted">Reliable air bags to protect your cargo.</p>
+              <h4 class="card-title text-primary font-weight-bold">Canvas Cover</h4>
+              <p class="text-muted">Canvas cover is 100% waterproof for protecting product from rain, dust.</p>
             </div>
           </div>
         </div>
         <div class="col-md-4 text-center">
           <div class="card border-0 shadow">
-            <img src="assets/products/RatchetLashingSystemAndLashingBelt.jpeg" alt="Lashing Belt" class="card-img-top img-fluid" style="height: 200px; object-fit: cover;">
+            <img src="assets/products/SilpaulinCover.jpeg" alt="Silpaulin Cover" class="card-img-top img-fluid" style="height: 200px; object-fit: cover;">
             <div class="card-body">
-              <h4 class="card-title text-primary font-weight-bold">Lashing Belt</h4>
-              <p class="text-muted">Durable lashing solutions for industrial needs.</p>
+              <h4 class="card-title text-primary font-weight-bold">Silpaulin Cover</h4>
+              <p class="text-muted">Silpaulin is Light Weight Tarpaulin. Features: Light Weight yet tough. Its lamination process makes it that much more stronger without adding too much to its weight.</p>
             </div>
           </div>
         </div>
@@ -64,6 +95,39 @@
       </div>
     </div>
   </div>
+
+<!-- Bootstrap Product Carousel
+<div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+  -- Indicators --
+  <div class="carousel-indicators">
+    <button *ngFor="let product of products; let i = index" type="button"
+            data-bs-target="#productCarousel" 
+            [attr.data-bs-slide-to]="i"
+            [class.active]="i === 0">
+    </button>
+  </div>
+
+  -- Carousel Items --
+  <div class="carousel-inner">
+    <div *ngFor="let product of products; let i = index" class="carousel-item" [class.active]="i === 0">
+      <div class="d-flex flex-column align-items-center text-center p-4">
+        <img [src]="product.image" class="d-block" style="width: 300px; height: 300px; object-fit: cover;" alt="{{ product.name }}">
+        <h3 class="mt-3">{{ product.name }}</h3>
+        <p style="max-width: 500px;">{{ product.description }}</p>
+      </div>
+    </div>
+  </div>
+
+  -- Controls (Always Visible) --
+  <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div> -->
 
   <!-- Offerings Section -->
   <div class="container py-5">
