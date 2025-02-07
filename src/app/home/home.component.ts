@@ -9,6 +9,7 @@ import { RouterLink } from '@angular/router';
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
+  
   products = [
     {
       name: 'HDPE Tarpaulin Cover',
